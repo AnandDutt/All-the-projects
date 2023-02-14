@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <p><%= abc %></p> -->
+     <%for(var i of abc){%>
+        <p><%= i.StudentName %> <%= i.ParentName %> <%= i.GuardianName %> <%= i.Paymentmethod %><a href="<%= i._id%>/update ">UPDATE</a><a href="<%= i._id%>/delete ">DELETE</a></p>
+    <% } %>
+
+
+    <!-- Update: click event(like a pen icon), click the pen -> update-form opens, fill the form and submit -->
+
+</body>
+</html>
